@@ -277,13 +277,13 @@ body {
 /* Keyframes */
 @keyframes pendulum {
   0% {
-    transform: rotate(5deg);
+    transform: rotate(5deg) scale(1.25);
   }
   50% {
-    transform: rotate(-5deg);
+    transform: rotate(-5deg) scale(1.25);
   }
   100% {
-    transform: rotate(5deg);
+    transform: rotate(5deg) scale(1.25);
   }
 }
 
@@ -370,5 +370,19 @@ body {
 @media (max-height: 500px) {
   .draggable {
     font-size: 11px;
+  }
+  .banner__cart-zone {
+    max-width: 180px;
+  }
+  @keyframes pendulum {
+    0% {
+      transform: rotate(5deg) scale(1.35);
+    }
+    50% {
+      transform: rotate(-5deg) scale(1.35);
+    }
+    100% {
+      transform: rotate(5deg) scale(1.35);
+    }
   }
 }
